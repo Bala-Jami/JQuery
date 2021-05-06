@@ -1,0 +1,64 @@
+<!--
+    event types :- 1) click 2) double click(dblclick) 3)mouseenter , mouseleave 4)keypress , keydown , keyup
+        5) change   6) focus , blur     7) scroll   8) resize
+
+    * Here mouseenter and mouseleave can apply as single byhover()
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1> JQuery Events</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis id illum, voluptate provident ducimus tempora quidem nobis corrupti quas, totam quod dolor excepturi optio asperiores itaque voluptatibus esse magnam ipsam. Eius, totam? Totam, perspiciatis aliquid, optio at ab repellendus quaerat earum iste quae, nesciunt praesentium expedita velit ut laborum.</p>
+        <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere unde labore consectetur molestiae accusantium perspiciatis. Quia qui, voluptate illo quis sed nihil quae reprehenderit consequuntur voluptas numquam sit, nostrum, iste maiores facilis nulla aliquid eveniet debitis excepturi tempore suscipit soluta molestiae cum. Perferendis, veniam sint eligendi et earum pariatur!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam voluptatem praesentium temporibus saepe magnam dolore nihil, eveniet hic ea rerum dolores nemo voluptatum. Commodi necessitatibus rerum reiciendis error veniam perspiciatis assumenda quos porro odit at. Reiciendis, quasi! Nemo sapiente repellendus fuga ab veniam, atque ea doloremque laudantium ad error maxime.</p>
+        <input type="submit">
+        <script>
+
+          /*
+           $(function(){
+                $(":submit").click(
+                    function(){
+                        $("#one").hide(1000)
+                    }
+                )
+                $(":submit").dblclick(
+                    function(){
+                    $("#one").show(1000)
+                    }
+                )
+            })
+            */
+
+
+
+
+            /*
+
+            $(function(){
+                $('#one').hover(
+                    function(){
+                        $('p').css("background-color","black")
+                    },
+                    function(){
+                        $('p').css("color","orange")
+                    }
+                )
+            })
+
+            */
+
+            $(function(){
+                $(window).resize(
+                    function(){
+                        $('body').css("background-color","blue")
+                    }
+                )
+            })
+        </script>
+    </body>
+</html>
